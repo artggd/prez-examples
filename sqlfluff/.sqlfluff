@@ -1,0 +1,19 @@
+[sqlfluff]
+dialect = postgres
+sql_file_exts = .sql
+exclude_rules = L029,L025
+
+[sqlfluff:rules]
+tab_space_size = 4
+max_line_length = 250
+indent_unit = space
+allow_scalar = True
+single_table_references = consistent
+unquoted_identifiers_policy = all
+
+[sqlfluff:rules:L010]
+# Keywords
+capitalisation_policy = upper
+
+[sqlfluff:rules:L031]
+force_enable = True

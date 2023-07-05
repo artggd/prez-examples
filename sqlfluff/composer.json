@@ -1,0 +1,12 @@
+{
+    "name": "demo/sql-fluff",
+    "type": "project",
+    "require": {
+        "doctrine/dbal": "^3.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Demo\\SqlFluff\\": "src/"
+        }
+    }
+}
